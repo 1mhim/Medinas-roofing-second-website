@@ -3,22 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Learn about Medina's Roofing, a trusted family-owned roofing company with over 20 years of experience serving Central California." />
-    <meta name="keywords" content="roofing, about medinas roofing, central california roofing, experienced roofers, family business" />
-    <meta name="author" content="Medina's Roofing" />
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Medina's Roofing offers professional roofing services in Central California, including inspections, repairs, replacements, and more. Request a free quote today.">
+    <meta name="keywords" content="roofing, roof repair, roof replacement, gutters, insulation, Central California, Medina's Roofing">
+    <meta name="author" content="Medina's Roofing">
 
-    <title>About Us | Medina's Roofing</title>
+    <title>Medina's Roofing</title>
+
+    <!-- Favicon links -->
+    <link rel="icon" href="icon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="icon/favicon-16x16.png" type="image/png" sizes="16x16" />
+    <link rel="icon" href="icon/favicon-32x32.png" type="image/png" sizes="32x32" />
+    
+    <!-- Additional icons for Apple and Android -->
+    <link rel="apple-touch-icon" href="icon/apple-icon.png" sizes="180x180" />
+    <link rel="icon" href="icon/android-icon-192x192.png" type="image/png" sizes="192x192" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-
+    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    
     <style>
       body {
-        font-family: 'Inter', sans-serif;
-        background: url('img/background.jpg') no-repeat center center fixed;
+        font-family: "Inter", sans-serif;
+        background: url("img/background.jpg") no-repeat center center fixed;
         background-size: cover;
         background-color: #777070;
       }
@@ -34,33 +44,53 @@
   <body class="text-white relative">
     <div class="overlay"></div>
 
-    <!-- Header -->
-    <header class="bg-white bg-opacity-90 text-gray-800 fixed top-0 w-full z-50 shadow-md">
-      <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="index.html" class="text-xl font-extrabold text-orange-500">Medina's Roofing</a>
-        <nav class="hidden sm:flex space-x-6 font-medium items-center">
-          <a href="services.html" class="hover:text-orange-500 transition">Services</a>
-          <a href="index.html#reviews" class="hover:text-orange-500 transition">Reviews</a>
-          <a href="about.html" class="hover:text-orange-500 transition">About Us</a>
-          <a href="index.html#contact" class="hover:text-orange-500 transition">Contact</a>
-        </nav>
-        <div class="hidden sm:flex flex-col text-right text-sm font-semibold text-gray-700 space-y-1">
-          <a href="tel:+12093450922" class="hover:text-orange-500 transition">📞 (209) 345-0922</a>
-          <a href="mailto:lmedinacs16@gmail.com" class="hover:text-orange-500 transition">✉️ lmedinacs16@gmail.com</a>
-        </div>
-        <button id="menu-btn" class="sm:hidden text-3xl focus:outline-none">&#9776;</button>
-      </div>
-      <div id="mobile-menu" class="sm:hidden hidden px-6 pb-4">
-        <nav class="flex flex-col space-y-2 font-medium">
-          <a href="services.html" class="hover:text-orange-500 transition">Services</a>
-          <a href="index.html#reviews" class="hover:text-orange-500 transition">Reviews</a>
-          <a href="about.html" class="hover:text-orange-500 transition">About Us</a>
-          <a href="index.html#contact" class="hover:text-orange-500 transition">Contact</a>
-          <a href="tel:+12093450922" class="mt-3 text-orange-500 font-semibold">📞 (209) 345-0922</a>
-          <a href="mailto:lmedinacs16@gmail.com" class="text-orange-500 font-semibold">✉️ lmedinacs16@gmail.com</a>
-        </nav>
-      </div>
-    </header>
+   <header class="bg-white bg-opacity-90 text-gray-800 fixed top-0 w-full z-50 shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Left: Logo -->
+    <a href="index.html" class="text-xl font-extrabold text-orange-500">Medina's Roofing</a>
+
+    <!-- Middle: Desktop Nav -->
+    <nav class="hidden sm:flex space-x-6 font-medium items-center">
+      <a href="services.html" class="hover:text-orange-500 transition">Services</a>
+      <a href="index.html#reviews" class="hover:text-orange-500 transition">Reviews</a>
+      <a href="about.html" class="hover:text-orange-500 transition">About Us</a>
+      <a href="index.html#contact" class="hover:text-orange-500 transition">Contact</a>
+    </nav>
+
+   <!-- Right: Contact Info -->
+<div class="hidden sm:flex flex-col text-right text-sm font-semibold text-gray-700 space-y-1">
+  <a href="tel:+12093450922" class="hover:text-orange-500 transition">
+    📞 (209) 345-0922
+  </a>
+  <a href="mailto:lmedinacs16@gmail.com" class="hover:text-orange-500 transition">
+    ✉️ lmedinacs16@gmail.com
+  </a>
+  <span class="text-gray-600">📄 License #: 910710</span>
+</div>
+
+
+    <!-- Mobile: Hamburger Icon -->
+    <button id="menu-btn" class="sm:hidden text-3xl focus:outline-none">
+      &#9776;
+    </button>
+  </div>
+
+  <!-- Mobile Nav Menu -->
+  <div id="mobile-menu" class="sm:hidden hidden px-6 pb-4">
+    <nav class="flex flex-col space-y-2 font-medium">
+      <a href="services.html" class="hover:text-orange-500 transition">Services</a>
+      <a href="index.html#reviews" class="hover:text-orange-500 transition">Reviews</a>
+      <a href="about.html" class="hover:text-orange-500 transition">About Us</a>
+      <a href="index.html#contact" class="hover:text-orange-500 transition">Contact</a>
+      <a href="tel:+12093450922" class="mt-3 text-orange-500 font-semibold">📞 (209) 345-0922</a>
+      <a href="mailto:lmedinacs16@gmail.com" class="text-orange-500 font-semibold">✉️ lmedinacs16@gmail.com</a>
+      <span class="text-sm text-gray-600">📄 License #: 910710</span>
+      
+      
+    </nav>
+  </div>
+  
+</header>
 
     <!-- Spacer for Fixed Header -->
     <div class="h-20"></div>

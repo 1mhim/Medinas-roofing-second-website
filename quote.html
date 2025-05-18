@@ -28,8 +28,72 @@
     </style>
   </head>
 
+
+
+
+  <!-- Header and the script -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  });
+</script>
+
+<header class="bg-white bg-opacity-90 text-gray-800 fixed top-0 w-full z-50 shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Left: Logo -->
+    <a href="index.html" class="text-xl font-extrabold text-orange-500">Medina's Roofing</a>
+
+    <!-- Middle: Desktop Nav -->
+    <nav class="hidden sm:flex space-x-6 font-medium items-center">
+      <a href="services.html" class="hover:text-orange-500 transition">Services</a>
+      <a href="index.html#reviews" class="hover:text-orange-500 transition">Reviews</a>
+      <a href="about.html" class="hover:text-orange-500 transition">About Us</a>
+      <a href="index.html#contact" class="hover:text-orange-500 transition">Contact</a>
+    </nav>
+
+   <!-- Right: Contact Info -->
+<div class="hidden sm:flex flex-col text-right text-sm font-semibold text-gray-700 space-y-1">
+  <a href="tel:+12093450922" class="hover:text-orange-500 transition">
+    📞 (209) 345-0922
+  </a>
+  <a href="mailto:lmedinacs16@gmail.com" class="hover:text-orange-500 transition">
+    ✉️ lmedinacs16@gmail.com
+  </a>
+  <span class="text-gray-600">📄 License #: 910710</span>
+</div>
+
+
+    <!-- Mobile: Hamburger Icon -->
+    <button id="menu-btn" class="sm:hidden text-3xl focus:outline-none">
+      &#9776;
+    </button>
+  </div>
+
+  <!-- Mobile Nav Menu -->
+  <div id="mobile-menu" class="sm:hidden hidden px-6 pb-4">
+    <nav class="flex flex-col space-y-2 font-medium">
+      <a href="services.html" class="hover:text-orange-500 transition">Services</a>
+      <a href="index.html#reviews" class="hover:text-orange-500 transition">Reviews</a>
+      <a href="about.html" class="hover:text-orange-500 transition">About Us</a>
+      <a href="index.html#contact" class="hover:text-orange-500 transition">Contact</a>
+      <a href="tel:+12093450922" class="mt-3 text-orange-500 font-semibold">📞 (209) 345-0922</a>
+      <a href="mailto:lmedinacs16@gmail.com" class="text-orange-500 font-semibold">✉️ lmedinacs16@gmail.com</a>
+      <span class="text-sm text-gray-600">📄 License #: 910710</span>
+      
+      
+    </nav>
+  </div>
+  
+</header>
+
   <body class="bg-gray-100 text-gray-800">
-    <section id="quote" class="py-12 px-4 sm:px-6 lg:px-8 bg-white text-gray-800">
+    <<section id="quote" class="pt-32 px-4 sm:px-6 lg:px-8 bg-white text-gray-800">
+>
       <div class="max-w-2xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-bold text-center mb-10">Request a Free Quote</h2>
 
